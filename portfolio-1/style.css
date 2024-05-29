@@ -1,0 +1,239 @@
+/* =====fonts====== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+:root {
+    --header-height: 3.5rem;
+
+    /* =====color===== */
+    --first-color: hsl(268, 77%, 58%);
+    --first-color-dark: hsl(268, 78%, 51%);
+    --first-color-light: hsl(268, 100%, 83%);
+    --title-color: hsl(0, 0%, 87%);
+    --text-color: hsl(0, 0%, 69%);
+    --body-color: hsl(200, 12%, 5%);
+    --container-color: hsl(200, 10%, 8%);
+    --border-color: hsl(0, 0%, 20%);
+    --white: #fff;
+
+
+    /* =========font and typography============== */
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2.25rem;
+    --h3-font-size: 1.5rem;
+    --larger-font-size: 1.2rem;
+    --large-font-size: 1.125rem;
+
+    /* ====== font-weight====== */
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-600: 600;
+}
+
+/* ------body color-------- */
+body {
+    background-color: var(--body-color);
+}
+
+.header-wrapper {
+    background-color: var(--body-color);
+}
+
+.navbar-brand {
+    color: var(--first-color);
+    font-weight: var(--weight-600);
+    font-size: var(--h2-font-size);
+}
+
+.nav-link {
+    font-weight: var(--weight-400);
+    font-size: var(--large-font-size);
+}
+
+#active {
+    color: var(--first-color);
+}
+
+.nav-link:hover {
+    color: var(--first-color);
+}
+
+#home {
+    background-color: var(--container-color);
+}
+
+.container {
+    color: var(--title-color);
+}
+
+.title-description {
+    line-height: 1.675rem;
+    letter-spacing: 1px;
+}
+
+.button {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width:450px) {
+    .button {
+        justify-content: center;
+    }
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--first-color);
+    border: 1px solid var(--first-color);
+    color: var(--white);
+    padding: 0.9rem 2.5rem;
+    font-size: var(--large-font-size);
+    border-radius: 0.5rem;
+    transition: all 0.5s ease var(--first-color);
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: var(--first-color);
+}
+
+.btn:hover {
+    background-color: var(--first-color-dark);
+    border: none;
+}
+
+.btn-transparent:hover {
+    background-color: var(--first-color);
+    color: var(--white);
+}
+
+.img-wrapper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+    z-index: 10;
+}
+
+@media screen and (min-width:451px) {
+    .img-wrapper {
+        margin-top: -80px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .img-wrapper {
+        margin-top: 20px;
+    }
+
+    .image {
+        width: 250px;
+        height: 250px;
+        border-radius: 250px;
+    }
+}
+
+.img-wrapper::before,
+.img-wrapper::after {
+    content: '';
+    inset: 0;
+}
+
+.img-wrapper::before {
+    background-color: var(--first-color-light);
+    animation: animate__before 8s ease-in-out infinite;
+}
+
+.img-wrapper::after {
+    background-color: var(--first-color);
+    animation: animate__before 8s ease-in-out infinite;
+}
+
+.img-wrapper::after,
+.image {
+    animation: animate__after 8s ease-in-out infinite;
+}
+
+/* Home animation */
+@keyframes animate__before {
+    0% {
+        border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+    }
+
+    50% {
+        border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+    }
+
+    100% {
+        border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+    }
+}
+
+@keyframes animate__after {
+    0% {
+        border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+    }
+
+    50% {
+        border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+    }
+
+    100% {
+        border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+    }
+}
+
+/* =====about===== */
+
+
+.about-img-wrapper {
+    position: relative;
+    height: 400px;
+    margin: auto;
+    width: 80vw;
+}
+
+
+.about-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.about-img:nth-child(1) {
+    clip-path: polygon(0 0, 0 32%, 28% 0);
+    transform: translateY(-1.25rem);
+}
+
+.about-img:nth-child(2) {
+    clip-path: polygon(28% 0, 0 32%, 0 160%, 17% 100%, 90% 0);
+    transform: translateY(-0.75rem);
+}
+
+.about-img:nth-child(3) {
+    clip-path: polygon(90% 0, 100% 0, 100% 66%, 75% 100%, 16% 100%);
+    transform: translateY(-0.25rem);
+}
+
+.about-img:nth-child(4) {
+    clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+    transform: translateY(0.25rem);
+}
+
+/* ----about img hover----- */
+#about-img-wrapper:hover .about-img {
+    transform: translateY(0.125rem);
+}
