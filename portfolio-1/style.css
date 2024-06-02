@@ -34,6 +34,9 @@
 
 /* ------body color-------- */
 body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     background-color: var(--body-color);
 }
 
@@ -68,14 +71,25 @@ body {
     color: var(--title-color);
 }
 
+.title {
+    transition: all 0.5s ease;
+}
+
 .title-description {
     line-height: 1.675rem;
     letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+.title:hover {
+    color: var(--first-color);
+    transition: 1s;
 }
 
 .button {
     display: flex;
     gap: 20px;
+    transform: all 0.5s ease;
 }
 
 @media screen and (max-width:450px) {
@@ -254,6 +268,9 @@ body {
 .description {
     line-height: 1.675rem;
     letter-spacing: 1px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .section-title {
@@ -267,8 +284,67 @@ body {
     margin-left: 10px;
 }
 
-@media screen and(max-width:450px) {
-    .section-title {
-        margin-top: 40px;
+.data-title {
+    color: var(--title-color);
+}
+
+.data-description {
+    color: var(--text-color);
+}
+
+hr {
+    height: 1.5px;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background: linear-gradient(45deg, #7e95fc, #4e66f1, #8f90da, #173beb, #7a16dfda, #c050ec, #d870f1, #ec52cb, #e253e2);
+    animation: animate_bg 5s linear infinite;
+    background-size: 200% auto;
+    transition: 5s ease-in-out;
+}
+
+@keyframes animate_bg {
+    0% {
+        background-position: 0 0;
     }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.social-link {
+    color: var(--first-color-light);
+    font-size: var(--larger-font-size);
+    transform: scale(1.125rem);
+    transition: all 0.75s ease-in-out;
+}
+
+.social-link:hover {
+    color: var(--first-color-dark);
+    font-size: var(--h3-font-size);
+    transition: 0.075s ease;
+}
+
+/* ======= Qualification ======= */
+#qualification{
+    
+}
+.qualification-st {
+    color: var(--first-color);
+}
+
+.qualification-t {
+    color: var(--title-color);
+}
+
+.heading hr {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 30%;
 }
