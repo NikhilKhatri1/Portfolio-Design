@@ -387,3 +387,11 @@ hr {
 .resume-skill {
     color: var(--first-color);
 }
+
+.resume-course {
+    color: var(--title-color);
+}
+
+.resume-item {
+    color: var(--text-color);
+}
