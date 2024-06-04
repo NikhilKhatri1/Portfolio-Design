@@ -35,7 +35,7 @@
 body {
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     box-sizing: border-box;
     background-color: var(--body-color);
 }
@@ -46,10 +46,10 @@ body {
 
 .navbar-brand {
     background: linear-gradient(45deg,
-            hsl(221, 89%, 58%),
+            hsl(221, 94%, 46%),
             hsl(232, 88%, 59%),
             hsl(220, 77%, 50%),
-            hsl(242, 77%, 54%),
+            hsl(268, 77%, 54%),
             hsl(267, 64%, 50%),
             hsl(288, 87%, 55%),
             hsl(308, 93%, 55%),
@@ -60,7 +60,7 @@ body {
     font-weight: var(--weight-600);
     font-size: var(--h2-font-size);
     animation: animate_bg 5s linear infinite;
-    background-size: 400% auto;
+    background-size: 500% auto;
 }
 
 .nav-link {
@@ -321,9 +321,9 @@ hr {
             hsl(308, 93%, 55%),
             hsl(327, 85%, 55%),
             hsl(347, 84%, 54%));
-    box-shadow: 0 0 5px rgba(116, 116, 252, 0.8);
+    box-shadow: 0 0 10px rgba(125, 125, 238, 0.8);
     animation: animate_bg 3s linear infinite;
-    background-size: 400% auto;
+    background-size: 600% auto;
 }
 
 @keyframes animate_bg {
