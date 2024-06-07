@@ -4,35 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glowing Gradient Logo</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
-            /* Set your background color here */
-        }
-
-        .logo {
-            font-size: 4em;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(45deg,
-                    #8a2be2,
-                    #9400d3,
-                    #4b0082);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 10px rgba(138, 43, 226, 0.7), 0 0 20px rgba(148, 0, 211, 0.5), 0 0 30px rgba(75, 0, 130, 0.3);
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="logo">Your Logo Text</div>
+    <section class="pt-lg-5 pt-5" id="qualification">
+        <div class="mt-lg-2 mt-5 text-center">
+            <h3 class="qualification-st mb-lg-4 mt-lg-0 mt-4 fw-bold fs-3">My Journey</h3>
+            <h2 class="qualification-t mt-lg-0 mt-1 fw-bold fs-1 text-light">Qualification</h2>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6 fs-2 text-start my-4">
+                <div class="resume-education fw-bold text-center">Education</div>
+                <hr>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                B.Tech
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <h4 class="resume-title fw-bold fs-6 col-6">Anand Engineering College</h4>
+                                <h5 class="col-6 resume-date text-end fs-6 fw-bold">2019-2023</h5>
+                                <p class="resume-description col-12 my-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Repudiandae autem mollitia illo nemo tenetur ipsam incidunt necessitatibus
+                                    esse
+                                    tempore similique.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Industrial Training
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <h4 class="resume-title fw-bold fs-6 col-6">509 Workshop, Agra</h4>
+                                <h5 class="col-6 resume-date text-end fs-6 fw-bold">2 Months</h5>
+                                <p class="resume-description col-12 my-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Repudiandae autem mollitia illo nemo tenetur ipsam incidunt necessitatibus
+                                    esse
+                                    tempore similique.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 fs-2 text-start my-4">
+                <div class="resume-education fw-bold text-center">Education</div>
+                <hr>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                B.Tech
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <h4 class="resume-title fw-bold fs-6 col-6">Anand Engineering College</h4>
+                                <h5 class="col-6 resume-date text-end fs-6 fw-bold">2019-2023</h5>
+                                <p class="resume-description col-12 my-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Repudiandae autem mollitia illo nemo tenetur ipsam incidunt necessitatibus
+                                    esse
+                                    tempore similique.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Industrial Training
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <h4 class="resume-title fw-bold fs-6 col-6">509 Workshop, Agra</h4>
+                                <h5 class="col-6 resume-date text-end fs-6 fw-bold">2 Months</h5>
+                                <p class="resume-description col-12 my-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Repudiandae autem mollitia illo nemo tenetur ipsam incidunt necessitatibus
+                                    esse
+                                    tempore similique.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 
 </html>

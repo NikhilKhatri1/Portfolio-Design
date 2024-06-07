@@ -384,14 +384,24 @@ hr {
 }
 
 .resume-education,
-.resume-skill {
+.resume-skill,
+.resume-education {
     color: var(--first-color);
 }
 
 .resume-course {
+    color: var(--white);
+}
+
+.resume-title {
     color: var(--title-color);
 }
 
-.resume-item {
+.resume-date {
     color: var(--text-color);
+}
+
+.resume-description {
+    color: var(--text-color);
+    font-size: var(--large-font-size);
 }
