@@ -163,7 +163,7 @@
                 <div class="col-12 col-lg-6 fs-2 text-start my-4">
                     <div class="resume-education fw-bold text-center">Education</div>
                     <hr>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="educationAccordion"> <!-- Updated ID -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -172,8 +172,9 @@
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
+                                data-bs-parent="#educationAccordion"> <!-- Updated data-bs-parent -->
                                 <div class="accordion-body row">
+                                    <!-- Education content -->
                                     <h4 class="resume-title fw-bold fs-6 col-6">Anand Engineering College</h4>
                                     <h5 class="col-6 resume-date text-end fs-6 fw-bold">2019-2023</h5>
                                     <p class="resume-description col-12 my-3">Lorem ipsum dolor sit amet consectetur
@@ -192,8 +193,9 @@
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
+                                data-bs-parent="#educationAccordion"> <!-- Updated data-bs-parent -->
                                 <div class="accordion-body row">
+                                    <!-- Industrial Training content -->
                                     <h4 class="resume-title fw-bold fs-6 col-6">509 Workshop, Agra</h4>
                                     <h5 class="col-6 resume-date text-end fs-6 fw-bold">2 Months</h5>
                                     <p class="resume-description col-12 my-3">Lorem ipsum dolor sit amet consectetur
@@ -207,21 +209,23 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 fs-2 text-start my-4">
-                    <div class="resume-education fw-bold text-center">Education</div>
+                    <div class="resume-education fw-bold text-center">Courses</div>
                     <hr>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="coursesAccordion"> <!-- Updated ID -->
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
+                            <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    B.Tech
+                                    data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Python with Data-Structure
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse show"
+                                aria-labelledby="headingThree" data-bs-parent="#coursesAccordion">
+                                <!-- Updated data-bs-parent -->
                                 <div class="accordion-body row">
-                                    <h4 class="resume-title fw-bold fs-6 col-6">Anand Engineering College</h4>
-                                    <h5 class="col-6 resume-date text-end fs-6 fw-bold">2019-2023</h5>
+                                    <!-- Python with Data-Structure content -->
+                                    <h4 class="resume-title fw-bold fs-6 col-6">Coding Ninja</h4>
+                                    <h5 class="col-6 resume-date text-end fs-6 fw-bold">2022-23</h5>
                                     <p class="resume-description col-12 my-3">Lorem ipsum dolor sit amet consectetur
                                         adipisicing
                                         elit. Repudiandae autem mollitia illo nemo tenetur ipsam incidunt necessitatibus
@@ -231,17 +235,18 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
+                            <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Industrial Training
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    UI / Full-Stack with React
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#coursesAccordion"> <!-- Updated data-bs-parent -->
                                 <div class="accordion-body row">
-                                    <h4 class="resume-title fw-bold fs-6 col-6">509 Workshop, Agra</h4>
-                                    <h5 class="col-6 resume-date text-end fs-6 fw-bold">2 Months</h5>
+                                    <!-- UI / Full-Stack with React content -->
+                                    <h4 class="resume-title fw-bold fs-6 col-6">Naresh IT</h4>
+                                    <h5 class="col-6 resume-date text-end fs-6 fw-bold">6 Months</h5>
                                     <p class="resume-description col-12 my-3">Lorem ipsum dolor sit amet consectetur
                                         adipisicing
                                         elit. Repudiandae autem mollitia illo nemo tenetur ipsam incidunt necessitatibus
@@ -254,6 +259,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 </body>
 
