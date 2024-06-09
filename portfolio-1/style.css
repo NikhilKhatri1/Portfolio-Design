@@ -405,3 +405,35 @@ hr {
     color: var(--text-color);
     font-size: var(--large-font-size);
 }
+
+.accordion {
+    background-color: transparent;
+}
+
+.accordion-header {
+    background-color: transparent;
+}
+
+/* Apply linear gradient as border color for accordion buttons */
+.accordion-button {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, hsl(221, 89%, 58%), hsl(232, 88%, 59%), hsl(220, 77%, 50%), hsl(242, 77%, 54%), hsl(267, 64%, 50%), hsl(288, 87%, 55%), hsl(308, 93%, 55%), hsl(327, 85%, 55%), hsl(347, 84%, 54%)) 1;
+    background-color: transparent;
+    color: white;
+}
+
+/* Apply linear gradient as border color for collapsed accordion buttons */
+.accordion-button.collapsed {
+    border-color: transparent;
+}
+
+/* Apply linear gradient as border color for expanded accordion buttons */
+.accordion-button:not(.collapsed) {
+    border-color: transparent;
+}
+
+/* Apply linear gradient as border color for accordion body */
+.accordion-body {
+    background-color: transparent !important;
+    color: white;
+}
