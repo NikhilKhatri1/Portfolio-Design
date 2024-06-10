@@ -450,7 +450,5 @@ hr {
     background-color: var(--container-color);
     border: none !important;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     transition: all .5s ease-in-out;
 }
