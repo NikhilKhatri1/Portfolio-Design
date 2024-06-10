@@ -35,7 +35,7 @@
 body {
     padding: 0;
     margin: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     box-sizing: border-box;
     background-color: var(--body-color);
 }
@@ -406,34 +406,51 @@ hr {
     font-size: var(--large-font-size);
 }
 
-.accordion {
-    background-color: transparent;
+#qualification {
+    background-color: var(--container-color);
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* ====== Customize accordion ====== */
+.row {
+    border: none !important;
+}
+
+.accordion-item {
+    border: none !important;
 }
 
 .accordion-header {
-    background-color: transparent;
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 24px;
+    background-color: var(--border-color);
 }
 
-/* Apply linear gradient as border color for accordion buttons */
-.accordion-button {
-    border: 2px solid;
-    border-image: linear-gradient(45deg, hsl(221, 89%, 58%), hsl(232, 88%, 59%), hsl(220, 77%, 50%), hsl(242, 77%, 54%), hsl(267, 64%, 50%), hsl(288, 87%, 55%), hsl(308, 93%, 55%), hsl(327, 85%, 55%), hsl(347, 84%, 54%)) 1;
-    background-color: transparent;
-    color: white;
+.accordion-header .accordion-button {
+    background: linear-gradient(45deg,
+            hsl(221, 94%, 46%),
+            hsl(232, 88%, 59%),
+            hsl(220, 77%, 50%),
+            hsl(268, 77%, 54%),
+            hsl(267, 64%, 50%),
+            hsl(288, 87%, 55%),
+            hsl(308, 93%, 55%),
+            hsl(327, 85%, 55%),
+            hsl(347, 84%, 54%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: animate_bg 5s linear infinite;
+    background-size: 500% auto;
 }
 
-/* Apply linear gradient as border color for collapsed accordion buttons */
-.accordion-button.collapsed {
-    border-color: transparent;
-}
-
-/* Apply linear gradient as border color for expanded accordion buttons */
-.accordion-button:not(.collapsed) {
-    border-color: transparent;
-}
-
-/* Apply linear gradient as border color for accordion body */
 .accordion-body {
-    background-color: transparent !important;
-    color: white;
+    background-color: var(--container-color);
+    border: none !important;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .5s ease-in-out;
 }
