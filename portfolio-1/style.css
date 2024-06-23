@@ -278,6 +278,10 @@ body {
 
 /* ====== about-text====== */
 
+p::selection {
+    color: var(--first-color-dark);
+}
+
 .description {
     line-height: 1.675rem;
     letter-spacing: 1px;
@@ -451,4 +455,49 @@ hr {
     border: none !important;
     justify-content: center;
     transition: all .5s ease-in-out;
+}
+
+/* ++++++++++++ Project CSS +++++++++++++ */
+.project-t {
+    color: var(--first-color);
+}
+
+.project-div div {
+    display: flex;
+    justify-content: center;
+    background-color: var(--container-color);
+    height: 100px;
+    width: 100px;
+}
+
+#Project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container {
+    height: 100vh;
+    width: 100%;
+    border: 4px solid #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.project-row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 95%;
+}
+
+.project-row div {
+    height: 70%;
+    width: 29%;
+}
+
+@media (max-width:450px) {
+    .project-row div {
+        height: 25%;
+        width: 90%;
+    }
 }
