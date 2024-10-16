@@ -7,10 +7,10 @@ const About = () => {
                 <div class="row mx-lg-2 px-lg-3 mx-md-0 px-md-0" id="row">
                     <div class="col-lg-5 col-12 mx-md-auto" id="about-img-wrapper">
                         <div class="about-img-wrapper">
-                            <img src="about-2.jpg" width="300" height="300" class="about-img" />
-                            <img src="about-2.jpg" width="300" height="300" class="about-img" />
-                            <img src="about-2.jpg" width="300" height="300" class="about-img" />
-                            <img src="about-2.jpg" width="300" height="300" class="about-img" />
+                            <img src="about-2.jpg" width="260" height="300" class="about-img" />
+                            <img src="about-2.jpg" width="260" height="300" class="about-img" />
+                            <img src="about-2.jpg" width="260" height="300" class="about-img" />
+                            <img src="about-2.jpg" width="260" height="300" class="about-img" />
                         </div>
                     </div>
                     <div class="col-lg-7 col-12 text-center">

@@ -1,40 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
 
 const Header = () => {
+    const [activeLink, setActiveLink] = useState('home'); // Set default active link
+
+    const navOptionClick = (link) => {
+        setActiveLink(link); // Update the active link state
+    };
+
     return (
-        <div class="header-wrapper sticky-top">
-            <header class="header mx-lg-5 px-lg-5 mx-md-0 px-md-0">
-                <nav class="navbar navbar-expand-lg navbar-dark mx-lg-4 px-lg-4 mx-md-0 px-md-0">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Nikhil Khatri</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active mx-lg-2" aria-current="page" href="#home" id="active">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-lg-2" href="#about">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-lg-2" href="#qualification">Qualification</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-lg-2" href="#project">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-lg-2" href="#portfolio">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-lg-2" href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
+        <div className="header-wrapper sticky-top mb-3">
+            <header className="header">
+                <Navbar variant="dark" expand="lg">
+                    <div className="container-fluid">
+                        <Navbar.Brand href="#">Nikhil Khatri</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="navbarNav" />
+                        <Navbar.Collapse id="navbarNav">
+                            <Nav className="ms-auto mb-2 mb-lg-0">
+                                <Nav.Link
+                                    href="#home"
+                                    className={`mx-lg-2 ${activeLink === 'home' ? 'active' : ''}`}
+                                    onClick={() => navOptionClick('home')}
+                                    aria-current={activeLink === 'home' ? 'page' : undefined}
+                                >
+                                    Home
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="#about"
+                                    className={`mx-lg-2 ${activeLink === 'about' ? 'active' : ''}`}
+                                    onClick={() => navOptionClick('about')}
+                                >
+                                    About
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="#qualification"
+                                    className={`mx-lg-2 ${activeLink === 'qualification' ? 'active' : ''}`}
+                                    onClick={() => navOptionClick('qualification')}
+                                >
+                                    Qualification
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="#project"
+                                    className={`mx-lg-2 ${activeLink === 'project' ? 'active' : ''}`}
+                                    onClick={() => navOptionClick('project')}
+                                >
+                                    Projects
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="#contact"
+                                    className={`mx-lg-2 ${activeLink === 'contact' ? 'active' : ''}`}
+                                    onClick={() => navOptionClick('contact')}
+                                >
+                                    Contact
+                                </Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
                     </div>
-                </nav>
+                </Navbar>
             </header>
         </div>
     );

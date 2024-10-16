@@ -10,16 +10,13 @@ import './App.css'; // Your custom CSS file
 
 const App = () => {
   return (
-    <Router>
+    <div>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/qualification" element={<Qualifications />} />
-        <Route path="/projects" element={<Projects />} />
-        {/* Add other routes as necessary */}
-      </Routes>
-    </Router>
+      <Home />
+      <About />
+      <Qualifications />
+      <Projects />
+    </div>
   );
 };
 
