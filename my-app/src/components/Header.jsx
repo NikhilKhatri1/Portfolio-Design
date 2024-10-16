@@ -40,7 +40,7 @@ const Header = () => {
                                     Qualification
                                 </Nav.Link>
                                 <Nav.Link
-                                    href="#project"
+                                    href="#Project"
                                     className={`mx-lg-2 ${activeLink === 'project' ? 'active' : ''}`}
                                     onClick={() => navOptionClick('project')}
                                 >

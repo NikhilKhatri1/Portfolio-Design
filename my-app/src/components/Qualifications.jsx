@@ -3,7 +3,7 @@ import { Accordion } from 'react-bootstrap';
 
 const Qualifications = () => {
     return (
-        <section className="pt-lg-5 pt-5" id="qualification">
+        <section className="pt-lg-5 pt-5 container-bg" id="qualification">
             <div className="mt-lg-2 mt-5 text-center">
                 <h3 className="qualification-st mb-lg-4 mt-lg-0 mt-4 fw-bold fs-3">My Journey</h3>
                 <h2 className="qualification-t mt-lg-0 mt-1 fw-bold fs-1 text-light">Qualification</h2>

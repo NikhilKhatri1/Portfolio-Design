@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <section class="pt-4 pt-md-11" id="home">
+        <section class="pt-4 pt-md-11 container-bg " id="home">
             <div class="container mt-lg-4 mt-md-0">
                 <div class="row mx-lg-2 px-lg-3 mx-md-0 px-md-0">
                     <div class="col-lg-6 col-12 col-md-7">

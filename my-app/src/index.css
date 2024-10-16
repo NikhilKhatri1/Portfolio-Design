@@ -114,10 +114,11 @@ body {
   color: var(--first-color);
 }
 
-#home {
+.container-bg {
   background-color: var(--container-color) !important;
   border-radius: 20px;
 }
+
 
 .container {
   color: var(--title-color);
@@ -462,7 +463,6 @@ hr {
 }
 
 #qualification {
-  background-color: var(--container-color);
   width: 100%;
   margin-top: 40px;
 }
@@ -643,4 +643,20 @@ hr {
     /* Center text */
     margin: 1px !important;
   }
+}
+
+/* ====== contact ====== */
+
+.contact .btn {
+  width: 120px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.contact{
+  display: flex;
 }

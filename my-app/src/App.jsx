@@ -7,6 +7,7 @@ import Qualifications from './components/Qualifications';
 import Projects from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; // Your custom CSS file
+import Contact from './components/contact.jsx';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <Qualifications />
       <Projects />
+      <Contact/>
     </div>
   );
 };
