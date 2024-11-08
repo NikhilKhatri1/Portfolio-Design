@@ -451,6 +451,7 @@ hr {
 
 .resume-title {
   color: var(--title-color);
+  font-size: 15px;
 }
 
 .resume-date {

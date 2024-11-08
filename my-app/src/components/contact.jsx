@@ -20,8 +20,8 @@ const Contact = () => {
                     <div className="resume-education fw-bold text-center">Personal</div>
                     <hr />
                     <div className='ms-0 ms-lg-4'>
-                        <h5 className='text-white bi bi-person-lines-fill'><span> Phone Number :<span>+ 91 888 233 6985</span> </span></h5>
-                        <h5 className='text-white bi bi-envelope'><span> Email : <a href='https://mail.google.com/mail/u/0/#inbox?compose=new'>nikkhatri311@gmail.com</a></span></h5>
+                        <h5 className='text-white bi bi-person-lines-fill '><span className='fs-6'> Phone No. :<span className='ms-2 ms-lg-2 my-2 text-primary text-decoration-underline'>+91 8882336985</span> </span></h5>
+                        <h5 className='text-white bi bi-envelope'><span className='fs-6'> Email :<a className='ms-lg-2 ms-2 my-2'>nikkhatri311@gmail.com</a></span></h5>
                     </div>
 
                 </div>
