@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 
 const Header = () => {
-    const [activeLink, setActiveLink] = useState('home'); // Set default active link
+    const [activeLink, setActiveLink] = useState('home'); 
 
     const navOptionClick = (link) => {
-        setActiveLink(link); // Update the active link state
+        setActiveLink(link);
     };
 
     return (

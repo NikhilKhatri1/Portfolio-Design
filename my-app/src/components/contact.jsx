@@ -11,10 +11,9 @@ const Contact = () => {
                 <div className="offset-lg-1 offset-1 col-10 col-lg-5 fs-2 text-start my-4 mx-auto">
                     <div className="resume-education fw-bold text-center">Social Link</div>
                     <hr />
-                    <div className='ms-0 ms-lg-4 contact'>
-                        <a href='' className='btn bi bi-github'> <span className='ms-1'>github</span></a>
-                        <a href='' className='btn mx-2 bi bi-linkedin'><a href=""></a><span className='ms-1'>Linkedin</span></a>
-                        <a href='' className='btn bi bi-google'><a href=""></a><span className='ms-1'>Gmail</span></a>
+                    <div className='contact d-flex justify-content-center'>
+                        <a href='https://github.com/NikhilKhatri1' className='btn bi bi-github'> <span className='ms-1'>github</span></a>
+                        <a href='https://www.linkedin.com/in/nikhil-khattri/' className='btn mx-2 bi bi-linkedin'><a href=""></a><span className='ms-1'>Linkedin</span></a>
                     </div>
 
                 </div>
@@ -22,8 +21,8 @@ const Contact = () => {
                     <div className="resume-education fw-bold text-center">Personal</div>
                     <hr />
                     <div className='ms-0 ms-lg-4'>
-                        <h5 className=''>Phone Number : </h5>
-                        <h5 >Email : </h5>
+                        <h5 className='text-white bi bi-person-lines-fill'><span> Phone Number :<span>+ 91 888 233 6985</span> </span></h5>
+                        <h5 className='text-white bi bi-envelope'><span> Email : <a href='https://mail.google.com/mail/u/0/#inbox?compose=new'>nikkhatri311@gmail.com</a></span></h5>
                     </div>
 
                 </div>

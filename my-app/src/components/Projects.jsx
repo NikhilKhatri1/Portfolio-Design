@@ -37,35 +37,35 @@ const Projects = () => {
                 >
                     {/* SwiperSlide components should be directly inside Swiper */}
                     <SwiperSlide className="content">
-                        <img src="project-img-1.jpg" alt="Project 1" className='img' />
+                        <img src="project-1.png" alt="Project 1" className='img' />
                         <div className="text-content">
-                            <h3>Project 1</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempora enim dignissimos voluptatem culpa sed consequatur cumque nisi recusandae dolor?</p>
-                            <button className='btn'>Read more</button>
+                            <h3>Doctor Appointment App</h3>
+                            <p>The Doctor Appointment Web App allows admins to manage customer details, doctors, and payments, while customers can update their personal information.</p>
+                            <a className='text-decoration-none text-white btn' href="https://prescriptoappointment.netlify.app/">Read more</a>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="content">
-                        <img src="project-img-2.jpg" alt="Project 2" className='img' />
+                        <img src="project-2.png" alt="Project 2" className='img' />
                         <div className="text-content">
-                            <h3>Project 2</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempora enim dignissimos voluptatem culpa sed consequatur cumque nisi recusandae dolor?</p>
-                            <button className='btn'>Read more</button>
+                            <h3>Property Management App</h3>
+                            <p>The Property Management Web App allows admins to manage customer details, properties, and payments, while customers can update their personal information.</p>
+                            <a href="https://propertymanagemenapp1.netlify.app/" className='text-decoration-none text-white btn'>Read more</a>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="content">
-                        <img src="project-img-3.jpg" alt="Project 3" className='img' />
+                        <img src="project-4.png" alt="Project 3" className='img' />
                         <div className="text-content">
-                            <h3>Project 3</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempora enim dignissimos voluptatem culpa sed consequatur cumque nisi recusandae dolor?</p>
-                            <button className='btn'>Read more</button>
+                            <h3>Nike Landing Page</h3>
+                            <p> I built a dynamic Nike webpage with React.js for the front-end and Node.js for the back-end, focusing on delivering a sleek, responsive design that aligns with Nike's brand and enhances user interaction</p>
+                            <a href="https://nikewebpagetrail.netlify.app/" className='btn text-decoration-none text-white'>Read more</a>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="content">
-                        <img src="project-img-3.jpg" alt="Project 4" className='img' />
+                        <img src="project-3.png" alt="Project 4" className='img' />
                         <div className="text-content">
-                            <h3>Project 4</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempora enim dignissimos voluptatem culpa sed consequatur cumque nisi recusandae dolor?</p>
-                            <button className='btn'>Read more</button>
+                            <h3>Lazarev Landing Page</h3>
+                            <p>This is a sleek, interactive digital product design agency website, showcasing cutting-edge UI/UX design</p>
+                            <a href="https://lazarevlandingpage.netlify.app/" className='text-decoration-none text-white btn'>Read more</a>
                         </div>
                     </SwiperSlide>
                 </Swiper>

@@ -15,14 +15,9 @@ const About = () => {
                     </div>
                     <div class="col-lg-7 col-12 text-center">
                         <h3 class="section-title text-lg-start mb-lg-4 mt-lg-0 mt-4 fw-bold fs-3">Who am i?</h3>
-                        <h2 class="h3 mt-lg-0 mt-1">I'm Nikhil Khatri, a Visual UI Designer
-                            and Web
-                            Developer</h2>
+                        <h2 class="h3 mt-lg-0 mt-1">I'm Nikhil Khatri, a UI FULL-STACK <br /> DEVELOPER</h2>
                         <p class="description my-4 ">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor provident iste consequatur
-                            ullam quia quam
-                            voluptate optio voluptatibus, reprehenderit doloremque magnam, inventore nisi delectus! Aut
-                            sunt iusto nemo
+                            I love creating websites and apps that are both easy to use and look great. From building user-friendly designs to making sure everything works smoothly behind the scenes, I handle both the front-end and back-end. My goal is to make simple, fast, and reliable web applications that solve real problems.
                         </p>
                         <hr />
                         <ul class="about-data text-start list-unstyled row p-lg-4 my-lg-3 p-2 my-5">
@@ -33,12 +28,7 @@ const About = () => {
                                     <span class="data-description col-lg-8"> Nikhil Khatri</span>
                                 </div>
                             </li>
-                            <li class="data-item col-6 col-lg-6">
-                                <div class="row">
-                                    <h5 class="data-title col-lg-4">Age:</h5>
-                                    <span class="data-description col-lg-8">30 Years</span>
-                                </div>
-                            </li>
+
                             <li class="data-item col-6 col-lg-6">
                                 <div class="row">
                                     <h5 class="data-title col-lg-4">From:</h5>
@@ -53,16 +43,11 @@ const About = () => {
                             </li>
                         </ul>
                         <div class="about-button ">
-                            <a href="#" class="btn mb-2">Download CV</a>
+                            <a href='Nikhil Khatri UI Full Stack Developer.pdf' class="btn mb-2" download="Nikhil_Khatri_CV.pdf">Download CV</a>
                             <hr />
                             <div class="social text-center mt-lg-4 mt-4">
-                                <a href="#" class="social-link mx-lg-2 mx-3 "><i class="bi bi-twitter"></i></a>
-
-                                <a href="#" class="social-link mx-lg-2 mx-3 "><i class="bi bi-instagram"></i></a>
-
-                                <a href="#" class="social-link mx-lg-2 mx-3 "><i class="bi bi-facebook"></i></a>
-
-                                <a href="#" class="social-link mx-lg-2 mx-3 "><i class="bi bi-linkedin"></i></a>
+                                <a href="https://github.com/NikhilKhatri1" class="social-link mx-lg-2 mx-3 "><i class="bi bi-github"></i></a>
+                                <a href="https://www.linkedin.com/in/nikhil-khattri/" class="social-link mx-lg-2 mx-3 "><i class="bi bi-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
